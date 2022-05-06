@@ -14,7 +14,7 @@ SECRET_KEY = config("SECRET_KEY", default=string.ascii_letters)
 
 DEBUG = config("DEBUG", default=True, cast=bool)
 # DEBUG = False
-ALLOWED_HOSTS = ['localhost', '127.0.0.1','https://bookmyshowaberdeen.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','bookmyshowaberdeen.herokuapp.com']
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -24,13 +24,10 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django.contrib.sites",
-    # Third-party
     "crispy_forms",
     "debug_toolbar",
     "widget_tweaks",
     'six',
-    # 'snowpenguin.django.recaptcha3',
-    # Local
     "apps.account",
     "apps.cart",
     "apps.core",
@@ -125,7 +122,7 @@ ACCOUNT_UNIQUE_EMAIL = True
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "Asia/Bangkok"
+TIME_ZONE = "Europe/London"
 
 USE_I18N = True
 
@@ -157,10 +154,10 @@ EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "lethienbao3012@gmail.com"
-EMAIL_HOST_PASSWORD = "nguyenngocphuong1"
+EMAIL_HOST_USER = "itsdaarionaharis@gmail.com"
+EMAIL_HOST_PASSWORD = "iphone6itis"
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = "MovieCenter <noreply@MovieCenter.com>"
+DEFAULT_FROM_EMAIL = "Bookmyshow <itsdaarionaharis@gmail.com>"
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 

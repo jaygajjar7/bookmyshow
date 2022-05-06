@@ -79,18 +79,6 @@ def checkout(request):
                 cart_movie.is_active = False
                 cart_movie.save()
 
-            # send email success payment
-            messages = render_to_string("checkout/checkout_email.html", {
-                'name': order.user_id.username,
-            })
-            email = EmailMessage(
-                "Thank you for purchasing movies",
-                messages,
-                settings.DEFAULT_FROM_EMAIL,
-                [request.user.email],
-            )
-            email.fail_silently = False
-            email.send()
             # payment success
             return HttpResponseRedirect(reverse_lazy('checkout:checkout-done'))
     else:

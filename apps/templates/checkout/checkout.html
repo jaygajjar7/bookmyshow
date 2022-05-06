@@ -4,7 +4,7 @@
 {% load crispy_forms_tags %}
 
 {% block title %}
-    Check Out | Movie Center
+    Check Out | Bookmyshow
 {% endblock title %}
 
 {% block cssblock %}
@@ -13,18 +13,8 @@
 
     <section class="section1 relative text-center">
         <div class="jumbotron text-center">
-            <h1 class="separator"><small>SHOP</small></h1>
-            <span class="font-weight-bold">CHECK OUT</span>
+            <h1 class="separator"><small>CHECK OUT</small></h1>
         </div>
-    </section>
-
-    <section class="section2">
-        <nav aria-label="breadcrumb" class="bg-light section-xl">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a class="mau" href="#">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Checkout</li>
-            </ol>
-        </nav>
     </section>
 
     <div class="container">
@@ -65,7 +55,7 @@
     </div>
 
     <div class="row">
-        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="col-sm-9 col-md-9 col-lg-9 mx-auto">
             <div class="card card-signin my-5">
                 <div class="card-body">
                     <form class="rd-mailform text-left" method="post" action="{% url 'checkout:payment' %}">

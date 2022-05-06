@@ -4,7 +4,7 @@
 
 {% load crispy_forms_tags %}
 {% block title %}
-  Confirm Email | Movie Center
+  Confirm Email | Bookmyshow
 {%endblock title %}
 
 {% block cssblock %}
@@ -12,19 +12,11 @@
 {% endblock cssblock %}
 
 {% block content %}
-<section class="relative">
-  <div class="container">
-      <div class="jumbotron text-center">
-          <h1 class="separator"><small>Update</small></h1>
-          <span class="font-weight-bold">confirm your email</span>
-      </div>
-  </div>
-</section>
 
 <nav aria-label="breadcrumb" class="bg-light section-xl">
   <ol class="breadcrumb">
       <li class="breadcrumb-item"><a class="mau" href="#">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Confirm Email</li>
+      <li class="breadcrumb-item active" aria-current="page">Registered</li>
   </ol>
 </nav>
 
@@ -33,12 +25,11 @@
       <div class="card card-signin my-5">
           <div class="card-body">
             <p>
-              <h1>Check your inbox.</h1>
               <p>
-                We have sent you an email to confirm your account registration.
+                you have successfully registered
               </p>
             </p>
-            <a class="btn btn-danger" href="{% url 'core:home' %}">Return Home</a>
+            <a class="btn btn-danger" href="{% url 'login' %}">Login</a>
           </p>
             </p>
           </div>

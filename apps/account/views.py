@@ -47,19 +47,10 @@ class SiteSignupView(CreateView):
         form = SignUpForm(request.POST)
         if form.is_valid():
             user = form.save(commit=False)
-            user.is_active = False
+            user.is_active = True
             user.save()
             token = user_tokenizer.make_token(user)
             user_id = urlsafe_base64_encode(force_bytes(user.id))
-            url = 'http://127.0.0.1:8000' + reverse('account:confirm_email', kwargs={'user_id': user_id, 'token': token})
-            message = get_template('account/acc_active_email.html').render({
-                'confirm_url': url
-            })
-            mail = EmailMessage('The Movie Center Email Confirmation', message, to=[user.email],
-                                from_email=settings.EMAIL_HOST_USER)
-            mail.content_subtype = 'html'
-            mail.send()
-
             return render(request, 'account/confirm_email_notification.html')
 
         return render(request, 'account/signup.html', {'form': form})
