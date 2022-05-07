@@ -1,6 +1,7 @@
+
 # BookMyShow
 
-## :video_game:Demo Application
+## :rocket: Demo Application
 :point_right: (https://bookmyshowaberdeen.herokuapp.com/) <br>
 
 
@@ -23,5 +24,35 @@ So after getting this done we have to install basic libraries
 ```bash
 pip install Django
 pip install -r requirements.txt
+python manage.py migrate
 python manage.py runserver 
 ```
+
+### Testing Credentials
+User Side
+Url: https://bookmyshowaberdeen.herokuapp.com/login/
+Username: daarionaharis
+Password: Jayg@1997 
+
+Admin Side
+Url: https://bookmyshowaberdeen.herokuapp.com/admin
+username: admin
+password: Jayg@1997 
+
+## Installed Packages
+
+| Name | Version |  
+| ----------- | ----------- |
+|dj-database-url|0.5.0|
+|gunicorn|20.1.0
+|Django|3.0.7|
+|django-allauth|0.41.0|
+|django-crispy-forms|1.9.0|
+|django-debug-toolbar|2.2|
+|Pillow|7.0.0|
+|python-decouple|3.3|
+|sorl-thumbnail|12.6.3|
+|python-decouple|3.3|
+|django-widget-tweaks|1.4.8|
+|django-recaptcha|3.0|
+|six|1.14.0|
