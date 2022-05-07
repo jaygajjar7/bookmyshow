@@ -29,15 +29,15 @@ python manage.py runserver
 ```
 
 ### Testing Credentials
-User Side
-Url: https://bookmyshowaberdeen.herokuapp.com/login/
-Username: daarionaharis
-Password: Jayg@1997 
+User Side <br>
+Url: https://bookmyshowaberdeen.herokuapp.com/login/ <br>
+Username: daarionaharis <br>
+Password: Jayg@1997 <br>
 
-Admin Side
-Url: https://bookmyshowaberdeen.herokuapp.com/admin
-username: admin
-password: Jayg@1997 
+Admin Side <br>
+Url: https://bookmyshowaberdeen.herokuapp.com/admin <br>
+username: admin <br>
+password: Jayg@1997 <br>
 
 ## Installed Packages
 
